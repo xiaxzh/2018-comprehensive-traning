@@ -1,0 +1,88 @@
+<!--details.wxml-->
+<image src="https://sysuactivity.com/static/{{currentPoster.poster}}" mode="aspectFill" class="posterDetails-image"></image>
+<view class="details-container">
+    <view class="line-container main-title">{{currentPoster.name}}</view>
+    <view class="line-container poster-tags">
+        <!-- <view class="single-poster-tag" wx:for="{{currentPoster.tag}}" wx:for-item="singleTag" wx:key="*this">{{singleTag}}</view>  -->
+        
+        <view class="single-poster-tag">{{campusSelector[currentPoster.campus & 1] ? "珠海校区" : ""}} {{campusSelector[currentPoster.campus & 2]? "北校区" : ""}} {{campusSelector[currentPoster.campus & 4]? "南校区" : ""}} {{campusSelector[currentPoster.campus & 8]? "东校区" : ""}}</view>
+        <view class="single-poster-tag">{{categorySel[currentPoster.type].name}}</view>
+        
+    </view>
+    <view class="line-container">
+        <text class="entry-text">活动时间： </text>
+        <text class="content-text">{{currentPoster.startTime}}-{{currentPoster.endTime}}</text>
+    </view>
+    <view class="line-container">
+        <text class="entry-text">活动地点： </text>
+        <text class="content-text">{{currentPoster.location}}</text>
+    </view>
+    <view class="line-container">
+        <text class="entry-text">活动对象： </text>
+        <text class="content-text">{{currentPoster.enrollCondition}}</text>
+    </view>
+    <view class="line-container">
+        <text class="entry-text">活动主办方： </text>
+        <text class="content-text">{{currentPoster.sponsor}}</text>
+    </view>
+
+    <view class="divLine"></view>
+
+    <view class="line-container" wx:if="{{currentPoster.introduction}}">
+        <view class="entry-text text-bl">活动简介： </view>
+        <view class="content-text text-bl">{{currentPoster.introduction}}</view>
+    </view>
+    <view class="line-container" wx:if="{{currentPoster.detail}}">
+        <view class="entry-text text-bl">活动详情： </view>
+        <view class="content-text text-bl">{{currentPoster.detail}}</view>
+        <!--<image class="qrcode-img" src="https://sysuactivity.com/static/{{currentPoster.qrcode}}" wx:if="{{currentPoster.qrcode}}"></image>
+        -->
+       
+        
+        <image class="qrcode-img" src="{{currentPoster.QRcode}}" wx:if="{{currentPoster.QRcode}}"></image>
+    </view>
+
+  <view class="divLine"></view>
+
+    <view class="line-container" wx:if="{{currentPoster.reward}}">
+        <view class="entry-text text-bl">活动奖励： </view>
+        <view class="content-text text-bl">{{currentPoster.reward}}</view>
+    </view>
+    <view class="line-container" wx:if="{{currentPoster.requirement}}">
+        <view class="entry-text text-bl">活动要求： </view>
+        <view class="content-text text-bl">{{currentPoster.requirement}}</view>
+    </view>
+    <view class="line-container" wx:if="{{currentPoster.enrollWay}}">
+        <view class="entry-text text-bl">报名方式： </view>
+        <view class="content-text text-bl"><text>{{currentPoster.enrollWay}}</text></view>
+    </view>
+    <view class="line-container" wx:if="{{currentPoster.pubEndtime}}">
+        <view class="entry-text text-bl">报名截止日期： </view>
+        <view class="content-text text-bl">{{currentPoster.enrollEndtime}}</view>
+  </view>
+</view> 
+<view class="null-line">
+
+</view>
+
+<!--<view class="{{currentPoster.status == 0 ? 'blue-button' : 'grey-button'}}" bindtap="{{currentPoster.status == 0 ? 'enrollButtonTap' : ''}}" data-poster-id="{{currentPoster.posterId}}">
+    <view class="{{currentPoster.status == 0 ? 'button-innerText' : 'button-innerText-error'}}">{{statusText[currentPoster.status]}}
+    </view>
+</view>
+-->
+
+<view class="{{'blue-button'}}" bindtap="{{'enrollButtonTap'}}" data-poster-id="{{currentPoster.posterId}}">
+    <view class="{{'button-innerText'}}">{{statusText[0]}}
+    </view>
+</view>
+
+
+<!--<view>
+  <button  class="{{currentPoster.status == 0 ? 'blue-button' : 'grey-button'}}"  type="primary" disabled="{{disabled}}" bindtap="{{currentPoster.status == 0 ? 'enrollButtonTap' : ''}}" data-poster-id="{{currentPoster.posterId}}">
+  
+    <text class="{{currentPoster.status == 0 ? 'button-innerText' : 'button-innerText-error'}}">{{statusText[currentPoster.status]}}</text>
+    </button>  
+</view>
+-->
+
+ 

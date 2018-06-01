@@ -1,0 +1,113 @@
+/* main.wxss */
+
+.topBar {
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  display: table-column;
+  width: 30%;
+  height: 80rpx;
+}
+
+.posterwall-icon {
+  display: inline-block;
+  vertical-align: top;
+  height: 50rpx;
+  width: 50rpx;
+  margin: 15rpx 20rpx 0 20rpx;
+}
+
+.topBarButton-icon {
+  display: inline-block;
+  vertical-align: top;
+  height: 40rpx;
+  width: 40rpx;
+  margin-top: 10rpx;
+}
+
+.posterwall-text {
+    display: inline-block;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+    font-size: 10pt;
+}
+
+.posters-container {
+    flex: 1;
+}
+
+.single-poster {
+    display: block;
+}
+
+.poster-info-left {
+    display: inline-block;
+    margin: 25rpx;
+}
+
+.cover-image {
+    height: 200rpx;
+    width: 200rpx;
+}
+
+.poster-info-right {
+    display: inline-block;
+    position: absolute;
+    margin: 25rpx;
+}
+
+.poster-mini-text {
+  color: grey;
+  height: 35rpx;
+  line-height: 35rpx;
+  font-size: 9pt;
+  margin: 15rpx 15rpx 15rpx 0; 
+}
+
+.poster-name {
+    font-weight: bold;
+    font-size: 14pt;
+    height: 50rpx;
+    line-height: 50rpx;
+    color: #444444;
+}
+
+.poster-tags {
+    height: 50rpx;
+    line-height: 50rpx;
+}
+
+.campus-notifier{
+     float: left; 
+     margin: 2px;
+}
+
+.button-gray {
+  display: inline-block;
+  width: 50%;
+  background-color: #f7f7f7;
+  border-radius: 0rpx;
+  line-height:80rpx;
+  height: 80rpx;
+  color: grey;
+  font-size: 10pt;
+  text-align: center;
+}
+
+.button-blue {
+  display: inline-block;
+  width: 50%;
+  background-color: #5074d7;
+  border: none;
+  border-radius: 0rpx;
+  line-height: 80rpx;
+  height: 80rpx;
+  color: white;
+  font-size: 10pt;
+  text-align: center;
+}

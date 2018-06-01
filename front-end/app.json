@@ -1,0 +1,60 @@
+{
+    "pages": [
+        "pages/posterwall/main/main",
+        "pages/posterwall/enroll/enroll",
+        "pages/posterwall/details/details",
+        "pages/posterwall/enroll_error/enroll_error",
+        "pages/posterwall/enroll_success/enroll_success",
+
+        "pages/discussion/main/main",
+        "pages/discussion/comments/comments",
+        "pages/discussion/newpost/newpost",
+
+        "pages/myaccount/main/main",
+        "pages/myaccount/myenrollments/myenrollments",
+        "pages/myaccount/mynotifications/mynotifications",
+        "pages/myaccount/myposts/myposts",
+        "pages/index/index",
+        "pages/logs/logs"
+    ],
+    
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#5074d7",
+        "navigationBarTitleText": "中大活动Plus",
+        "navigationBarTextStyle": "white"
+    },
+    "networkTimeout": {
+        "request": 10000,
+        "connectSocket": 10000,
+        "uploadFile": 10000,
+        "downloadFile": 10000
+    },
+    "tabBar": {
+      "color": "#000000",
+      "selectedColor": "#5074d7",
+      "borderStyle": "black",
+      "backgroundColor": "#ffffff",
+      "list": [
+        {
+          "pagePath": "pages/posterwall/main/main",
+          "iconPath": "image/tabBar/posterwall.png",
+          "selectedIconPath": "image/tabBar/posterwall-hi.png",
+          "text": "海报墙"
+        },
+        {
+          "pagePath": "pages/discussion/main/main",
+          "iconPath": "image/tabBar/discussion.png",
+          "selectedIconPath": "image/tabBar/discussion-hi.png",
+          "text": "讨论区"
+        },
+        {
+          "pagePath": "pages/myaccount/main/main",
+          "iconPath": "image/tabBar/myaccount.png",
+          "selectedIconPath": "image/tabBar/myaccount-hi.png",
+          "text": "我的"
+        }
+      ]
+    },
+    "debug": true
+}

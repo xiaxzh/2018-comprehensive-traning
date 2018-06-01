@@ -1,0 +1,95 @@
+/* enroll.wxss */
+
+.enroll-container {
+    margin: 40rpx 20rpx;
+}
+
+.enroll-container-success {
+    margin: 110rpx 20rpx;
+}
+
+.divLine {
+  width:  95%;
+  margin: 0 auto;
+}
+
+.section {
+    margin: 60rpx auto;
+    position: relative;
+    height: 90rpx;
+}
+
+.input {
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 12pt;
+    margin: 0rpx 20rpx 0rpx 20rpx;
+
+}
+
+.input-border {
+    vertical-align: top;
+    display: inline-block;
+    border: 1rpx solid rgb(220,220,220);
+    width: 80%;
+}
+
+.section__title {
+    font-weight: bold;
+    color: rgb(105,105,105);
+    vertical-align: top;
+    display: inline-block;
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 12pt;
+    margin: 0rpx 20rpx 0rpx 20rpx
+
+}
+
+.enroll-main-title {
+    font-size: 16pt;
+     /* font-weight: bold;  */
+    color: black;
+    text-align: center;
+    margin: 25rpx auto;
+}
+
+.success-icon {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 60rpx auto;
+}
+
+.success-text-container {
+    height:300rpx;
+}
+
+.main-text {
+    font-size: 16pt;
+    font-weight: bold;
+    margin: 0rpx auto;
+}
+
+.detail-text {
+    font-size: 14pt;
+    margin: 35rpx auto;
+}
+
+.blank-notify {
+    color: rgb(254, 67, 101);
+    font-size: 10pt;
+    margin: 0rpx 20rpx 0rpx 120rpx;
+}
+
+.con-button {
+    top: 40rpx;
+    color: white;
+    font-weight: 100;
+    background-color: #5074d7;
+}
+
+.successblue-button {
+    background-color: #5074d7;
+    border-radius: 5px;
+}

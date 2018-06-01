@@ -1,0 +1,210 @@
+/**app.wxss**/
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 200rpx 0;
+    box-sizing: border-box;
+}
+
+.center {
+    text-align: center;
+}
+
+.blue-button {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #5074d7;
+    margin: 25rpx auto;
+    margin-bottom: 0rpx;
+}
+
+.grey-button {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f7f7f7;
+    margin: 25rpx auto;
+    margin-bottom: 0rpx;
+}
+
+
+.button-innerText {
+    padding-top: 20rpx;
+    padding-bottom: 20rpx;
+    text-align: center;
+    font-size: 16pt;
+    color: white;
+}
+
+.button-innerText-error {
+    margin: 10rpx;
+    text-align: center;
+    font-size: 16pt;
+    color: gray;
+}
+
+.divLine {
+    background: #E0E3DA;
+    width: 100%;
+    height: 2rpx;
+}
+
+.verticalLine {
+  display: table-column;
+  background: #E0E3DA;
+  width: 2rpx;
+  height: 80rpx;
+  margin: 0 10rpx;
+}
+
+.checkbox-line {
+  float: right;
+  background: #E0E3DA;
+  width: 2rpx;
+  height: 60rpx;
+}
+
+.single-checkbox {
+  float: right;
+  border: #E0E3DA solid 1px;
+  padding: 2rpx;
+  margin: 16rpx;
+  border-radius: 14px;
+  height: 28rpx;
+  width: 28rpx;
+  text-align:center; 
+}
+
+.single-checkbox image {
+  visibility: hidden;
+}
+
+ .checkbox-box {
+   /* display: inline-block; */
+  padding: 10rpx 0 10rpx 40rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+} 
+
+.checkbox-text {
+    display: inline-block;
+}
+
+.checkbox-label {
+    display: inline-block;
+    width: 50%;
+    height: 80rpx;
+    font-size: 12pt;
+}
+
+.topBar {
+    height: 80rpx;
+}
+
+.topBarButton {
+  display: table-column;
+  width: 200rpx;
+  height: 60rpx;
+  margin: 10rpx;
+  border-radius: 0;
+}
+
+.blueView {
+  display: table-column;
+  width: 200rpx;
+  height: 60rpx;
+  margin: 10rpx;
+  border-radius: 0;
+}
+
+.topBarButton view {
+  display: inline-block;
+  height: 60rpx;
+  width: 70rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 10pt;
+  overflow: hidden;  
+  white-space: nowrap; 
+  text-overflow: ellipsis;
+}
+
+.blueView view {
+  display: inline-block;
+  height: 60rpx;
+  width: 120rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 10pt;
+  overflow: hidden;  
+  white-space: nowrap; 
+  text-overflow: ellipsis;
+  color: #5074d7;
+} 
+
+.blueView image {
+  display: none;
+}
+
+.topBarButton-hover {
+    border-radius: 0;
+    border: none;
+}
+
+button[class="topBarButton"]::after {
+    border: none;
+}
+
+.is_checked {
+  color: white;
+  background: #5074d7;
+  border: #5074d7 solid 1px;
+}
+
+.is_checked image {
+  visibility: visible;
+  height: 28rpx;
+  width: 28rpx;
+  margin-bottom: 24rpx;
+}
+
+.topBar-cell {
+    display: table-column;
+    width: 33%;
+    text-align: center;
+}
+
+.inline-bl {
+    display: inline-block
+}
+
+.single-poster-tag {
+    display: inline-block;
+    height: 38rpx;
+    line-height: 38rpx;
+    margin-right: 8rpx; 
+    padding: 2rpx 6rpx; 
+    font-size: 10pt;
+    color: white;
+    background-color: #5074d7;
+    border-radius: 8rpx;
+}
+
+.posterwall-topBarPicker {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 80rpx;
+  left: 0px;
+  z-index: 999;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.bl-center {
+  background-color: white;
+}
